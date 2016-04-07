@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> CORE2016 P3 </title>
+	
+	<script type="text/javascript">
+
+      function vaciar(){
+       document.getElementById("pantalla").value="";
+      }
+
+      function cuadrado(){
+       var num = document.getElementById("pantalla");
+        num.value = num.value * num.value ;
+      }
+
+      function inverso(){
+      var num= document.getElementById("pantalla");
+      num.value= 1/num.value;
+      }
+        
+    </script>
+   
+</head>
+
+<body>
+
+<header> Buenos días, bienvenido a la calculadora de José Ignacio Galán Roízo (joseignacio.galan.roizo@alumnos.upm.es) </header>
+<br>
+
+Número: <input type="text" id="pantalla" onClick="vaciar()"> 
+<p>
+ <button id="cuadrado" onClick="cuadrado()"> x<sup>2</sup> </button>
+ <button id="inverso" onClick="inverso()"> 1/x </button>
+
+</body>
+</html>
+
